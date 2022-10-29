@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <title>Login And Registration Page</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="fb.png">
+                    <img src="twi.png">
+                    <img src="go.png">
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn"> Log in</button>
+                </form>
+                <form id="register" class="input-group">
+                   <input type="text" placeholder="User Id" name="fn" id="fn" class="input-field" required>
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last name" required>
+                    <input type="text" class="input-field" placeholder="Phone number" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <label for="fn"><b>Gender</b></label> <input type="radio" name="Male">Male<input type="radio" name="Male">Female<input type="radio" name="Male">Others<p></p>
+                    <label for="fn"><b>Date Of Birth</b></label><input type="Date" id="name" name="DOB" placeholder="Date of birth" required>
+                    <input type="text" class="input-field" placeholder="Favorite color" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="text" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="chech-box"><span>I Agree With The Terms And Conditions</span>
+                    <button type="submit" class="submit-btn">register</button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            
+            function register(){
+                x.style.left = "-500px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+        </script>
+    </body>
+</html>
